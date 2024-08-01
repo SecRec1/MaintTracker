@@ -1,0 +1,27 @@
+.wrapper {
+  display: grid;
+
+  .tasklist-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    height: 50px;
+    .id-container {
+      display: grid;
+      grid-template-columns: 1fr 10fr;
+      font-weight: bold;
+      
+    }
+    .job-container {
+      display: grid;
+      grid-template-columns: 1fr 10fr;
+      font-weight: bold;
+    }
+    .instructions-container {
+      font-weight: bold;
+      display: grid;
+      grid-template-rows: 1fr 25fr;
+    }
+  }
+}

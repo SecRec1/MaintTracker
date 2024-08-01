@@ -1,0 +1,17 @@
+.item-card {
+  display: flex;
+  justify-content: center;
+  flex: 1fr 1fr;
+  height: 5em;
+}
+.leftside img {
+  height: 120px;
+}
+
+.top {
+    display: flex;
+    flex:1fr 1fr;
+}
+.bottom img{
+    height: 55px;
+}
