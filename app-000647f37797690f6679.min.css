@@ -1,5 +1,35 @@
 .task-editor {
   display: none;
+}.item-card {
+  display: flex;
+  justify-content: center;
+  flex: 1fr 1fr;
+  height: 5em;
+}
+
+.leftside img {
+  height: 120px;
+}
+
+.top {
+  display: flex;
+  flex: 1fr 1fr;
+}
+
+.bottom img {
+  height: 55px;
+}.search-list-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.1fr;
+  width: 100%;
+  align-items: center;
+}
+.search-list-wrapper .page-link {
+  display: grid;
+  justify-content: center;
+}
+.search-list-wrapper .page-link .icon {
+  font-size: 20px;
 }.edit-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -31,109 +61,6 @@
   font-weight: bold;
   display: grid;
   grid-template-rows: 1fr 25fr;
-}.item-card {
-  display: flex;
-  justify-content: center;
-  flex: 1fr 1fr;
-  height: 5em;
-}
-
-.leftside img {
-  height: 120px;
-}
-
-.top {
-  display: flex;
-  flex: 1fr 1fr;
-}
-
-.bottom img {
-  height: 55px;
-}.search-list-wrapper {
-  display: grid;
-  grid-template-columns: 2fr 1fr 0.1fr;
-  width: 100%;
-  align-items: center;
-}
-.search-list-wrapper .page-link {
-  display: grid;
-  justify-content: center;
-}
-.search-list-wrapper .page-link .icon {
-  font-size: 20px;
-}html {
-  font-size: 62.5%;
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-  font-family: "montserrat";
-}
-
-body {
-  overflow-x: hidden;
-  font-weight: normal;
-  background-image: url(/static/assets/images/lockimg.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 800px;
-  background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.app {
-  margin-top: 2rem;
-  display: grid;
-  justify-items: center;
-}.manager-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  height: auto;
-  width: 1500px;
-}
-
-.specs-manager-wrapper {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  width: 1500px;
-  height: 720px;
-}
-
-.Specs-list-wrapper {
-  display: grid;
-  width: 1500px;
-  justify-items: start;
-  justify-content: center;
-}
-
-.button {
-  position: static;
-}
-
-.specs {
-  display: none;
-}
-
-.tasks {
-  display: none;
-}
-
-.show {
-  display: block;
-  height: 100px;
-  width: 800px;
-  display: grid;
-  justify-content: center;
 }.task-item-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -186,55 +113,48 @@ body {
 }
 .task-item-container .actions .show {
   display: block;
-}.task-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 200px;
-}
-.task-container .set-task-form {
+}.manager-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  height: 300px;
+  justify-items: center;
+  align-items: center;
+  height: auto;
+  width: 1500px;
 }
-.task-container .set-task-form h1 {
-  height: 30px;
-}
-.task-container .set-task-form form {
+
+.specs-manager-wrapper {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  height: 200px;
+  justify-items: center;
+  width: 1500px;
+  height: 720px;
 }
-.task-container .set-task-form form .Set-task-Form {
+
+.Specs-list-wrapper {
   display: grid;
-  grid-template-rows: 1fr 10fr;
-  height: 125px;
+  width: 1500px;
+  justify-items: start;
+  justify-content: center;
 }
-.task-container .set-task-form form .Set-task-Form .upper-input-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  height: 35px;
+
+.button {
+  position: static;
 }
-.task-container .set-task-form form .Set-task-Form select {
-  height: 100%;
-}
-.task-container .set-task-form form .Set-task-Form select .hdselector {
-  width: 80px;
-}
-.task-container .set-task-form form .Set-task-Form input {
-  height: 100%;
-}
-.task-container .set-task-form form .Set-task-Form .startedat {
-  height: 100%;
-}
-.task-container .set-task-form form .Set-task-Form .startedat .start {
+
+.specs {
   display: none;
 }
-.task-container .set-task-form form .Set-task-Form .startedat .show {
-  display: block;
-  width: 150px;
+
+.tasks {
+  display: none;
 }
-.task-container .set-task-form form .Set-task-Form textarea {
+
+.show {
+  display: block;
   height: 100px;
+  width: 800px;
+  display: grid;
+  justify-content: center;
 }/* Filepicker CSS */
 .filepicker {
   font-family: sans-serif;
@@ -294,6 +214,86 @@ div.filepicker {
   border-width: 11px 0 0 11px;
   border-style: solid;
   border-color: white transparent transparent #920035;
+}.task-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 200px;
+}
+.task-container .set-task-form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 300px;
+}
+.task-container .set-task-form h1 {
+  height: 30px;
+}
+.task-container .set-task-form form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 200px;
+}
+.task-container .set-task-form form .Set-task-Form {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  height: 125px;
+}
+.task-container .set-task-form form .Set-task-Form .upper-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 35px;
+}
+.task-container .set-task-form form .Set-task-Form select {
+  height: 100%;
+}
+.task-container .set-task-form form .Set-task-Form select .hdselector {
+  width: 80px;
+}
+.task-container .set-task-form form .Set-task-Form input {
+  height: 100%;
+}
+.task-container .set-task-form form .Set-task-Form .startedat {
+  height: 100%;
+}
+.task-container .set-task-form form .Set-task-Form .startedat .start {
+  display: none;
+}
+.task-container .set-task-form form .Set-task-Form .startedat .show {
+  display: block;
+  width: 150px;
+}
+.task-container .set-task-form form .Set-task-Form textarea {
+  height: 100px;
+}html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "montserrat";
+}
+
+body {
+  overflow-x: hidden;
+  font-weight: normal;
+  background-image: url(/static/assets/images/lockimg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 800px;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+  margin-top: 2rem;
+  display: grid;
+  justify-items: center;
 }.nav-wrapper {
   display: grid;
   grid-template-columns: 1fr;
