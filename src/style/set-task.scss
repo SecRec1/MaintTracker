@@ -1,0 +1,52 @@
+.task-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 200px;
+  .set-task-form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 300px;
+    h1 {
+      height: 30px;
+    }
+
+    form {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      height: 200px;
+
+      .Set-task-Form {
+        display: grid;
+        grid-template-rows: 1fr 10fr;
+        height: 125px;
+        .upper-input-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+          height: 35px;
+        }
+        select {
+          height: 100%;
+          .hdselector {
+            width: 80px;
+          }
+        }
+        input {
+          height: 100%;
+        }
+        .startedat {
+          height: 100%;
+          .start {
+            display: none;
+          }
+          .show {
+            display: block;
+            width: 150px;
+          }
+        }
+        textarea {
+          height: 100px;
+        }
+      }
+    }
+  }
+}
