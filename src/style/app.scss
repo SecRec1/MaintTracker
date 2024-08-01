@@ -1,0 +1,152 @@
+.title {
+  font-size: 5em;
+  text-align: center;
+}
+
+.nav {
+  .nav-wrapper {
+    .nav-link-wrapper {
+      // Add styles for nav-link-wrapper if needed
+    }
+  }
+  .wrapper {
+    .detail-wrapper {
+      // Add styles for detail-wrapper if needed
+    }
+    .task-wrapper {
+      .task-bar-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+
+        .Overdue-container,
+        .Due-container,
+        .Upcoming-container {
+          .Overdue,
+          .Due,
+          .Upcoming {
+            background-color: #db162f; // Default color, overwrite as needed
+          }
+          .button {
+            font-size: 25px;
+            height: 4em;
+            width: 60em;
+          }
+          .Overdue-content,
+          .Due-content,
+          .Upcoming-content {
+            display: none;
+            background-color: #efefef;
+            position: absolute;
+            width: 1200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 0;
+            justify-content: center;
+            height: auto;
+          }
+          .show {
+            display: grid;
+            grid-template-rows: 1fr 5fr;
+            width: 1500px;
+            justify-content: center;
+          }
+          .label-wrapper {
+            display: grid;
+            width: 1500px;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom: black solid;
+            .task-label,
+            .lastdone-label,
+            .click-to-complete {
+              font-weight: bold;
+              font-size: 25px;
+            }
+            .task-label {
+              padding-right: 1000px;
+            }
+          }
+          .Task-list-wrapper {
+            width: 1500px;
+            .task-item-container {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              justify-content: center;
+              width: 1500px;
+              .text-content {
+                .task-card {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  justify-items: center;
+                  width: 1250px;
+                  
+                  .task {
+                    width: 1000px;
+                    align-content: center;
+                  }
+                  .date {
+                    justify-content: center;
+                    align-content: center;
+                  }
+                }
+              }
+              .complete {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+
+                .show {
+                  display: grid;
+                }
+                .modal {
+                  display: none; /* Hidden by default */
+                  justify-content: center;
+                  align-content: center;
+                  z-index: 2; /* Sit on top */
+                  left: 70%;
+                  top: 75%;
+                  width: 180px; /* Full width */
+                  height: 45px; /* Full height */
+
+                  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+                  .modal-content {
+                    display: grid;
+                    grid-template-rows: 1fr 1fr;
+                    justify-self: center;
+                    align-self: center;
+
+                    width: 100%;
+                    .buttons {
+                      display: grid;
+                      grid-template-columns: 1fr 1fr;
+                      justify-content: center;
+                    }
+                  }
+
+                  .close {
+                    &:hover,
+                    &:focus {
+                      color: black;
+                      text-decoration: none;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .Overdue-container .Overdue {
+          background-color: #db162f;
+        }
+        .Due-container .Due {
+          background-color: #faa613;
+        }
+        .Upcoming-container .Upcoming {
+          background-color: #eff1f3;
+        }
+      }
+    }
+  }
+}

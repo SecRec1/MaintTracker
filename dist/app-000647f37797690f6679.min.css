@@ -1,36 +1,24 @@
-.task-editor {
-  display: none;
-}.edit-form {
+.edit-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .edit-form .right {
   display: grid;
   justify-items: center;
-}.wrapper {
+}.task-editor {
+  display: none;
+}.search-list-wrapper {
   display: grid;
+  grid-template-columns: 2fr 1fr 0.1fr;
+  width: 100%;
+  align-items: center;
 }
-.wrapper .tasklist-wrapper {
+.search-list-wrapper .page-link {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
-  height: 50px;
+  justify-content: center;
 }
-.wrapper .tasklist-wrapper .id-container {
-  display: grid;
-  grid-template-columns: 1fr 10fr;
-  font-weight: bold;
-}
-.wrapper .tasklist-wrapper .job-container {
-  display: grid;
-  grid-template-columns: 1fr 10fr;
-  font-weight: bold;
-}
-.wrapper .tasklist-wrapper .instructions-container {
-  font-weight: bold;
-  display: grid;
-  grid-template-rows: 1fr 25fr;
+.search-list-wrapper .page-link .icon {
+  font-size: 20px;
 }.item-card {
   display: flex;
   justify-content: center;
@@ -49,18 +37,6 @@
 
 .bottom img {
   height: 55px;
-}.search-list-wrapper {
-  display: grid;
-  grid-template-columns: 2fr 1fr 0.1fr;
-  width: 100%;
-  align-items: center;
-}
-.search-list-wrapper .page-link {
-  display: grid;
-  justify-content: center;
-}
-.search-list-wrapper .page-link .icon {
-  font-size: 20px;
 }html {
   font-size: 62.5%;
 }
@@ -92,48 +68,6 @@ body {
   margin-top: 2rem;
   display: grid;
   justify-items: center;
-}.manager-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  height: auto;
-  width: 1500px;
-}
-
-.specs-manager-wrapper {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  width: 1500px;
-  height: 720px;
-}
-
-.Specs-list-wrapper {
-  display: grid;
-  width: 1500px;
-  justify-items: start;
-  justify-content: center;
-}
-
-.button {
-  position: static;
-}
-
-.specs {
-  display: none;
-}
-
-.tasks {
-  display: none;
-}
-
-.show {
-  display: block;
-  height: 100px;
-  width: 800px;
-  display: grid;
-  justify-content: center;
 }.task-item-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -186,6 +120,48 @@ body {
 }
 .task-item-container .actions .show {
   display: block;
+}.manager-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: auto;
+  width: 1500px;
+}
+
+.specs-manager-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  width: 1500px;
+  height: 720px;
+}
+
+.Specs-list-wrapper {
+  display: grid;
+  width: 1500px;
+  justify-items: start;
+  justify-content: center;
+}
+
+.button {
+  position: static;
+}
+
+.specs {
+  display: none;
+}
+
+.tasks {
+  display: none;
+}
+
+.show {
+  display: block;
+  height: 100px;
+  width: 800px;
+  display: grid;
+  justify-content: center;
 }.task-container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -235,6 +211,77 @@ body {
 }
 .task-container .set-task-form form .Set-task-Form textarea {
   height: 100px;
+}.detail-wrapper .Specs-item-container {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  padding: 30px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 1600px;
+}
+.detail-wrapper .Specs-item-container .text-content {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  justify-items: left;
+  justify-content: center;
+}
+.detail-wrapper .Specs-item-container .text-content .item-card {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  height: 5em;
+}
+.detail-wrapper .Specs-item-container .text-content .item-card .leftside {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.detail-wrapper .Specs-item-container .text-content .item-card .leftside .top {
+  height: 325px;
+  justify-content: center;
+  align-items: center;
+}
+.detail-wrapper .Specs-item-container .text-content .item-card .leftside .top img {
+  width: 75%;
+  height: auto;
+}
+.detail-wrapper .Specs-item-container .text-content .item-card .leftside .bottom {
+  height: 309px;
+  justify-content: center;
+  align-content: bottom;
+}
+.detail-wrapper .Specs-item-container .text-content .item-card .leftside .bottom img {
+  width: 100%;
+  height: auto;
+}
+.detail-wrapper .Specs-item-container .text-content .item-card .rightside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-style: solid;
+  height: 627px;
+  width: 800px;
+  font-size: 500%;
+}
+.detail-wrapper .Specs-item-container .text-content .item-card .rightside .left .item {
+  justify-content: space-between;
+  margin: 0px 25px 50px 0px;
+  font-weight: bold;
+}
+.detail-wrapper .Specs-item-container .text-content .item-card .rightside .right .item {
+  justify-content: space-between;
+  margin: 0px 25px 50px 0px;
+}
+.detail-wrapper .Specs-item-container .actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 620px;
+  justify-items: center;
+  align-items: baseline;
+}
+.detail-wrapper .Specs-item-container .actions .action-icon {
+  font-size: 1000%;
+  padding: 50px;
 }/* Filepicker CSS */
 .filepicker {
   font-family: sans-serif;
@@ -364,77 +411,6 @@ div.filepicker {
 .nav-wrapper .login-container .login-wrapper .login-box .button-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}.detail-wrapper .Specs-item-container {
-  display: grid;
-  grid-template-columns: 7fr 1fr;
-  padding: 30px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 1600px;
-}
-.detail-wrapper .Specs-item-container .text-content {
-  height: 100%;
-  width: 100%;
-  padding: 30px;
-  justify-items: left;
-  justify-content: center;
-}
-.detail-wrapper .Specs-item-container .text-content .item-card {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
-  height: 5em;
-}
-.detail-wrapper .Specs-item-container .text-content .item-card .leftside {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-.detail-wrapper .Specs-item-container .text-content .item-card .leftside .top {
-  height: 325px;
-  justify-content: center;
-  align-items: center;
-}
-.detail-wrapper .Specs-item-container .text-content .item-card .leftside .top img {
-  width: 75%;
-  height: auto;
-}
-.detail-wrapper .Specs-item-container .text-content .item-card .leftside .bottom {
-  height: 309px;
-  justify-content: center;
-  align-content: bottom;
-}
-.detail-wrapper .Specs-item-container .text-content .item-card .leftside .bottom img {
-  width: 100%;
-  height: auto;
-}
-.detail-wrapper .Specs-item-container .text-content .item-card .rightside {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-style: solid;
-  height: 627px;
-  width: 800px;
-  font-size: 500%;
-}
-.detail-wrapper .Specs-item-container .text-content .item-card .rightside .left .item {
-  justify-content: space-between;
-  margin: 0px 25px 50px 0px;
-  font-weight: bold;
-}
-.detail-wrapper .Specs-item-container .text-content .item-card .rightside .right .item {
-  justify-content: space-between;
-  margin: 0px 25px 50px 0px;
-}
-.detail-wrapper .Specs-item-container .actions {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 620px;
-  justify-items: center;
-  align-items: baseline;
-}
-.detail-wrapper .Specs-item-container .actions .action-icon {
-  font-size: 1000%;
-  padding: 50px;
 }.Specs-item-container {
   display: grid;
   grid-template-columns: 7fr 1fr;
@@ -685,6 +661,30 @@ div.filepicker {
 }
 .nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Upcoming {
   background-color: #eff1f3;
+}.wrapper {
+  display: grid;
+}
+.wrapper .tasklist-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  height: 50px;
+}
+.wrapper .tasklist-wrapper .id-container {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  font-weight: bold;
+}
+.wrapper .tasklist-wrapper .job-container {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  font-weight: bold;
+}
+.wrapper .tasklist-wrapper .instructions-container {
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: 1fr 25fr;
 }@keyframes passing-through {
   0% {
     opacity: 0;
@@ -991,4 +991,4 @@ div.filepicker {
   border-right: 6px solid transparent;
   border-bottom: 6px solid #be2626;
 }
-/*# sourceMappingURL=app-e63a921534953e86b87d.map*/
+/*# sourceMappingURL=app-dbc5bdba2422d4eb41fe.map*/

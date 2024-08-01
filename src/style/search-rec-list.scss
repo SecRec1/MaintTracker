@@ -1,0 +1,18 @@
+.search-list-wrapper{
+    display:grid;
+    grid-template-columns: 2fr 1fr 0.1fr;
+    width: 100%;
+    
+    align-items: center;
+    .des{}
+    .subdes{
+
+    }
+    .page-link{
+        display: grid;
+        justify-content: center;
+        .icon{
+            font-size: 20px;
+        }
+    }
+}
