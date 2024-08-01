@@ -1,11 +1,4 @@
-.edit-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.edit-form .right {
-  display: grid;
-  justify-items: center;
-}.task-editor {
+.task-editor {
   display: none;
 }.search-list-wrapper {
   display: grid;
@@ -19,24 +12,6 @@
 }
 .search-list-wrapper .page-link .icon {
   font-size: 20px;
-}.item-card {
-  display: flex;
-  justify-content: center;
-  flex: 1fr 1fr;
-  height: 5em;
-}
-
-.leftside img {
-  height: 120px;
-}
-
-.top {
-  display: flex;
-  flex: 1fr 1fr;
-}
-
-.bottom img {
-  height: 55px;
 }.wrapper {
   display: grid;
 }
@@ -61,6 +36,31 @@
   font-weight: bold;
   display: grid;
   grid-template-rows: 1fr 25fr;
+}.edit-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.edit-form .right {
+  display: grid;
+  justify-items: center;
+}.item-card {
+  display: flex;
+  justify-content: center;
+  flex: 1fr 1fr;
+  height: 5em;
+}
+
+.leftside img {
+  height: 120px;
+}
+
+.top {
+  display: flex;
+  flex: 1fr 1fr;
+}
+
+.bottom img {
+  height: 55px;
 }html {
   font-size: 62.5%;
 }
@@ -134,114 +134,6 @@ body {
   width: 800px;
   display: grid;
   justify-content: center;
-}.task-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 200px;
-}
-.task-container .set-task-form {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  height: 300px;
-}
-.task-container .set-task-form h1 {
-  height: 30px;
-}
-.task-container .set-task-form form {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  height: 200px;
-}
-.task-container .set-task-form form .Set-task-Form {
-  display: grid;
-  grid-template-rows: 1fr 10fr;
-  height: 125px;
-}
-.task-container .set-task-form form .Set-task-Form .upper-input-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  height: 35px;
-}
-.task-container .set-task-form form .Set-task-Form select {
-  height: 100%;
-}
-.task-container .set-task-form form .Set-task-Form select .hdselector {
-  width: 80px;
-}
-.task-container .set-task-form form .Set-task-Form input {
-  height: 100%;
-}
-.task-container .set-task-form form .Set-task-Form .startedat {
-  height: 100%;
-}
-.task-container .set-task-form form .Set-task-Form .startedat .start {
-  display: none;
-}
-.task-container .set-task-form form .Set-task-Form .startedat .show {
-  display: block;
-  width: 150px;
-}
-.task-container .set-task-form form .Set-task-Form textarea {
-  height: 100px;
-}/* Filepicker CSS */
-.filepicker {
-  font-family: sans-serif;
-}
-
-div.filepicker {
-  text-align: center;
-  padding: 5px;
-  background-color: #E1E1E1;
-  border-radius: 5px;
-  min-height: 60px;
-  border: 2px dashed #C7C7C7;
-}
-
-/* Icon */
-.filepicker-file-icon {
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0 2.5em 0;
-  padding-left: 45px;
-  color: black;
-}
-
-.filepicker-file-icon::before {
-  position: absolute;
-  top: -7px;
-  left: 0;
-  width: 29px;
-  height: 34px;
-  content: "";
-  border: solid 2px #7F7F7F;
-  border-radius: 2px;
-}
-
-.filepicker-file-icon::after {
-  font-size: 11px;
-  line-height: 1.3;
-  position: absolute;
-  top: 9px;
-  left: -4px;
-  padding: 0 2px;
-  content: "file";
-  content: attr(data-filetype);
-  text-align: right;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #000;
-}
-
-.filepicker-file-icon .fileCorner {
-  position: absolute;
-  top: -7px;
-  left: 22px;
-  width: 0;
-  height: 0;
-  border-width: 11px 0 0 11px;
-  border-style: solid;
-  border-color: white transparent transparent #920035;
 }.task-item-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -294,6 +186,55 @@ div.filepicker {
 }
 .task-item-container .actions .show {
   display: block;
+}.task-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 200px;
+}
+.task-container .set-task-form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 300px;
+}
+.task-container .set-task-form h1 {
+  height: 30px;
+}
+.task-container .set-task-form form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 200px;
+}
+.task-container .set-task-form form .Set-task-Form {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  height: 125px;
+}
+.task-container .set-task-form form .Set-task-Form .upper-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 35px;
+}
+.task-container .set-task-form form .Set-task-Form select {
+  height: 100%;
+}
+.task-container .set-task-form form .Set-task-Form select .hdselector {
+  width: 80px;
+}
+.task-container .set-task-form form .Set-task-Form input {
+  height: 100%;
+}
+.task-container .set-task-form form .Set-task-Form .startedat {
+  height: 100%;
+}
+.task-container .set-task-form form .Set-task-Form .startedat .start {
+  display: none;
+}
+.task-container .set-task-form form .Set-task-Form .startedat .show {
+  display: block;
+  width: 150px;
+}
+.task-container .set-task-form form .Set-task-Form textarea {
+  height: 100px;
 }.detail-wrapper .Specs-item-container {
   display: grid;
   grid-template-columns: 7fr 1fr;
@@ -435,6 +376,315 @@ div.filepicker {
 .nav-wrapper .login-container .login-wrapper .login-box .button-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}/* Filepicker CSS */
+.filepicker {
+  font-family: sans-serif;
+}
+
+div.filepicker {
+  text-align: center;
+  padding: 5px;
+  background-color: #E1E1E1;
+  border-radius: 5px;
+  min-height: 60px;
+  border: 2px dashed #C7C7C7;
+}
+
+/* Icon */
+.filepicker-file-icon {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 2.5em 0;
+  padding-left: 45px;
+  color: black;
+}
+
+.filepicker-file-icon::before {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 29px;
+  height: 34px;
+  content: "";
+  border: solid 2px #7F7F7F;
+  border-radius: 2px;
+}
+
+.filepicker-file-icon::after {
+  font-size: 11px;
+  line-height: 1.3;
+  position: absolute;
+  top: 9px;
+  left: -4px;
+  padding: 0 2px;
+  content: "file";
+  content: attr(data-filetype);
+  text-align: right;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+}
+
+.filepicker-file-icon .fileCorner {
+  position: absolute;
+  top: -7px;
+  left: 22px;
+  width: 0;
+  height: 0;
+  border-width: 11px 0 0 11px;
+  border-style: solid;
+  border-color: white transparent transparent #920035;
+}.Specs-item-container {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  padding: 30px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 1600px;
+}
+.Specs-item-container .spacer {
+  width: 60px;
+}
+.Specs-item-container .text-content {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  justify-items: left;
+  justify-content: center;
+}
+.Specs-item-container .text-content .item-card {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  height: 5em;
+}
+.Specs-item-container .text-content .item-card .leftside {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.Specs-item-container .text-content .item-card .leftside .top {
+  height: 325px;
+  justify-content: center;
+  align-items: center;
+}
+.Specs-item-container .text-content .item-card .leftside .top img {
+  width: auto;
+  height: 90%;
+}
+.Specs-item-container .text-content .item-card .leftside .bottom {
+  height: 309px;
+  justify-content: center;
+  align-content: bottom;
+}
+.Specs-item-container .text-content .item-card .leftside .bottom img {
+  width: 100%;
+  height: auto;
+}
+.Specs-item-container .text-content .item-card .rightside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-style: solid;
+  height: 627px;
+  width: 800px;
+  font-size: 500%;
+}
+.Specs-item-container .text-content .item-card .rightside .left .item {
+  justify-content: space-between;
+  margin: 0px 25px 50px 0px;
+}
+.Specs-item-container .text-content .item-card .rightside .right .item {
+  justify-content: space-between;
+  margin: 0px 25px 50px 0px;
+}
+.Specs-item-container .actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 620px;
+  justify-items: center;
+  align-items: baseline;
+}
+.Specs-item-container .actions .disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.Specs-item-container .action-icon {
+  font-size: 1000%;
+  padding: 50px;
+}
+.Specs-item-container .record-link {
+  font-size: 700%;
+}.title {
+  font-size: 5em;
+  text-align: center;
+}
+
+.nav .wrapper .task-wrapper .task-bar-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Overdue,
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Due,
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Upcoming,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Overdue,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Due,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Upcoming,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Overdue,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Due,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Upcoming {
+  background-color: #db162f;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .button,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .button,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .button {
+  font-size: 25px;
+  height: 4em;
+  width: 60em;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Overdue-content,
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Due-content,
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Upcoming-content,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Overdue-content,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Due-content,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Upcoming-content,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Overdue-content,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Due-content,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Upcoming-content {
+  display: none;
+  background-color: #efefef;
+  position: absolute;
+  width: 1200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 0;
+  justify-content: center;
+  height: auto;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .show,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .show,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .show {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  width: 1500px;
+  justify-content: center;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper {
+  display: grid;
+  width: 1500px;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: black solid;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper .task-label,
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper .lastdone-label,
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper .click-to-complete,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper .task-label,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper .lastdone-label,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper .click-to-complete,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper .task-label,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper .lastdone-label,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper .click-to-complete {
+  font-weight: bold;
+  font-size: 25px;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper .task-label,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper .task-label,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper .task-label {
+  padding-right: 1000px;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper {
+  width: 1500px;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 1500px;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .text-content .task-card,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .text-content .task-card,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .text-content .task-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width: 1250px;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .text-content .task-card .task,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .text-content .task-card .task,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .text-content .task-card .task {
+  width: 1000px;
+  align-content: center;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .text-content .task-card .date,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .text-content .task-card .date,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .text-content .task-card .date {
+  justify-content: center;
+  align-content: center;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .show,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .show,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .show {
+  display: grid;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal {
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-content: center;
+  z-index: 2; /* Sit on top */
+  left: 70%;
+  top: 75%;
+  width: 180px; /* Full width */
+  height: 45px; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal .modal-content,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal .modal-content,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal .modal-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal .modal-content .buttons,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal .modal-content .buttons,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal .modal-content .buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal .close:hover, .nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal .close:focus,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal .close:hover,
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal .close:focus,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal .close:hover,
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Overdue {
+  background-color: #db162f;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Due-container .Due {
+  background-color: #faa613;
+}
+.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Upcoming {
+  background-color: #eff1f3;
 }@keyframes passing-through {
   0% {
     opacity: 0;
@@ -740,255 +990,5 @@ div.filepicker {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid #be2626;
-}.Specs-item-container {
-  display: grid;
-  grid-template-columns: 7fr 1fr;
-  padding: 30px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 1600px;
-}
-.Specs-item-container .spacer {
-  width: 60px;
-}
-.Specs-item-container .text-content {
-  height: 100%;
-  width: 100%;
-  padding: 30px;
-  justify-items: left;
-  justify-content: center;
-}
-.Specs-item-container .text-content .item-card {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
-  height: 5em;
-}
-.Specs-item-container .text-content .item-card .leftside {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-.Specs-item-container .text-content .item-card .leftside .top {
-  height: 325px;
-  justify-content: center;
-  align-items: center;
-}
-.Specs-item-container .text-content .item-card .leftside .top img {
-  width: auto;
-  height: 90%;
-}
-.Specs-item-container .text-content .item-card .leftside .bottom {
-  height: 309px;
-  justify-content: center;
-  align-content: bottom;
-}
-.Specs-item-container .text-content .item-card .leftside .bottom img {
-  width: 100%;
-  height: auto;
-}
-.Specs-item-container .text-content .item-card .rightside {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-style: solid;
-  height: 627px;
-  width: 800px;
-  font-size: 500%;
-}
-.Specs-item-container .text-content .item-card .rightside .left .item {
-  justify-content: space-between;
-  margin: 0px 25px 50px 0px;
-}
-.Specs-item-container .text-content .item-card .rightside .right .item {
-  justify-content: space-between;
-  margin: 0px 25px 50px 0px;
-}
-.Specs-item-container .actions {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 620px;
-  justify-items: center;
-  align-items: baseline;
-}
-.Specs-item-container .actions .disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
-.Specs-item-container .action-icon {
-  font-size: 1000%;
-  padding: 50px;
-}
-.Specs-item-container .record-link {
-  font-size: 700%;
-}.title {
-  font-size: 5em;
-  text-align: center;
-}
-
-.nav .wrapper .task-wrapper .task-bar-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Overdue,
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Due,
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Upcoming,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Overdue,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Due,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Upcoming,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Overdue,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Due,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Upcoming {
-  background-color: #db162f;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .button,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .button,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .button {
-  font-size: 25px;
-  height: 4em;
-  width: 60em;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Overdue-content,
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Due-content,
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Upcoming-content,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Overdue-content,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Due-content,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Upcoming-content,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Overdue-content,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Due-content,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Upcoming-content {
-  display: none;
-  background-color: #efefef;
-  position: absolute;
-  width: 1200px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 0;
-  justify-content: center;
-  height: auto;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .show,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .show,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .show {
-  display: grid;
-  grid-template-rows: 1fr 5fr;
-  width: 1500px;
-  justify-content: center;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper {
-  display: grid;
-  width: 1500px;
-  grid-template-columns: 1fr 1fr 1fr;
-  border-bottom: black solid;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper .task-label,
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper .lastdone-label,
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper .click-to-complete,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper .task-label,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper .lastdone-label,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper .click-to-complete,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper .task-label,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper .lastdone-label,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper .click-to-complete {
-  font-weight: bold;
-  font-size: 25px;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .label-wrapper .task-label,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .label-wrapper .task-label,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .label-wrapper .task-label {
-  padding-right: 1000px;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper {
-  width: 1500px;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  width: 1500px;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .text-content .task-card,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .text-content .task-card,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .text-content .task-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  width: 1250px;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .text-content .task-card .task,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .text-content .task-card .task,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .text-content .task-card .task {
-  width: 1000px;
-  align-content: center;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .text-content .task-card .date,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .text-content .task-card .date,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .text-content .task-card .date {
-  justify-content: center;
-  align-content: center;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .show,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .show,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .show {
-  display: grid;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal {
-  display: none; /* Hidden by default */
-  justify-content: center;
-  align-content: center;
-  z-index: 2; /* Sit on top */
-  left: 70%;
-  top: 75%;
-  width: 180px; /* Full width */
-  height: 45px; /* Full height */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal .modal-content,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal .modal-content,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal .modal-content {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-self: center;
-  align-self: center;
-  width: 100%;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal .modal-content .buttons,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal .modal-content .buttons,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal .modal-content .buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal .close:hover, .nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Task-list-wrapper .task-item-container .complete .modal .close:focus,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal .close:hover,
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Task-list-wrapper .task-item-container .complete .modal .close:focus,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal .close:hover,
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Task-list-wrapper .task-item-container .complete .modal .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Overdue-container .Overdue {
-  background-color: #db162f;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Due-container .Due {
-  background-color: #faa613;
-}
-.nav .wrapper .task-wrapper .task-bar-container .Upcoming-container .Upcoming {
-  background-color: #eff1f3;
 }
 /*# sourceMappingURL=app-e63a921534953e86b87d.map*/
