@@ -12,7 +12,7 @@ export default class TaskDetails extends Component {
   }
   getTaskItem() {
     axios
-      .get(`http://127.0.0.1:5000/Task/${this.props.taskid}`)
+      .get(`http://https://backend-ci48.onrender.com/Task/${this.props.taskid}`)
 
       .then((response) => {
         

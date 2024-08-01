@@ -25,7 +25,7 @@ export default class SpecsContainer extends Component {
 
   getSpecsItems() {
     axios
-      .get(`http://127.0.0.1:5000/Specs`)
+      .get(`http://https://backend-ci48.onrender.com/Specs`)
       .then((response) => {
         this.setState({
           data: [...response.data],

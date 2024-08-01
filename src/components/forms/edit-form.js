@@ -26,7 +26,7 @@ export default class EditForm extends Component {
       hours: "",
       editMode: false,
       specsid: "",
-      //apiUrl: `127.0.0.1:5000/Specs/${this.state.sn}`,
+      //apiUrl: `https://backend-ci48.onrender.com/Specs/${this.state.sn}`,
       apiAction: "patch",
     };
 
@@ -72,13 +72,13 @@ export default class EditForm extends Component {
         motor: motor.dataURL || "",
         hours: hours || "",
         editMode: true,
-        apiUrl: `127.0.0.1:5000/Specs/${sn}`,
+        apiUrl: `https://backend-ci48.onrender.com/Specs/${sn}`,
         apiAction: "PUT",
       });
     }
   }
   handleSpecsId() {
-    axios.get(`http://127.0.0.1:5000/Specs`).then((response) => {
+    axios.get(`http://https://backend-ci48.onrender.com/Specs`).then((response) => {
       this.setState({ specsid: response.data.length + 1 });
     });
   }
@@ -126,7 +126,7 @@ export default class EditForm extends Component {
 
     axios({
       method: "PUT",
-      url: `http://127.0.0.1:5000/Specs/${this.state.sn}`,
+      url: `http://https://backend-ci48.onrender.com/Specs/${this.state.sn}`,
       data: data,
       headers: {
         "Content-Type": "application/json",

@@ -47,7 +47,7 @@ export default class Manager extends Component {
 
   async getAdmins() {
     try {
-      const response = await axios.get(`http://127.0.0.1:5000/Admin`);
+      const response = await axios.get(`http://https://backend-ci48.onrender.com/Admin`);
       this.setState({ admins: response.data }, this.getLoggedinStatus);
     } catch (error) {
       console.error(error);

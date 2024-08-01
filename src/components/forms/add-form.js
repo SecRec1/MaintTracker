@@ -25,7 +25,7 @@ export default class AddForm extends Component {
       hours: "",
 
       specsid: "",
-      apiUrl: "http://127.0.0.1:5000/Specs",
+      apiUrl: "http://https://backend-ci48.onrender.com/Specs",
       apiAction: "post",
     };
 
@@ -44,7 +44,7 @@ export default class AddForm extends Component {
 
   handleSpecsId = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:5000/Specs");
+      const response = await axios.get("http://https://backend-ci48.onrender.com/Specs");
       const existingIds = response.data.map((item) => item.id);
 
       let newId = this.state.id; 

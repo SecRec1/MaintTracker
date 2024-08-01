@@ -26,7 +26,7 @@ export default class SpecsManager extends Component {
 
   getSpecsItems() {
     axios
-      .get(`http://127.0.0.1:5000/Specs`)
+      .get(`http://https://backend-ci48.onrender.com/Specs`)
       .then((response) => {
         this.setState({
           specsItems: [...response.data],
@@ -49,7 +49,7 @@ export default class SpecsManager extends Component {
 
   handleDeleteClick(specsItem) {
     console.log("delete", specsItem);
-    axios.delete(`http://127.0.0.1:5000/Specs/${specsItem.sn}`);
+    axios.delete(`http://https://backend-ci48.onrender.com/Specs/${specsItem.sn}`);
     window.location.reload();
   }
   componentDidMount() {

@@ -29,7 +29,7 @@ export default class TaskManager extends Component {
   };
   getTaskItems() {
     axios
-      .get(`http://127.0.0.1:5000/Task`)
+      .get(`http://https://backend-ci48.onrender.com/Task`)
       .then((response) => {
         this.setState({
           taskItems: [...response.data],
@@ -52,7 +52,7 @@ export default class TaskManager extends Component {
   }
 
   handleDeleteClick(taskItem) {
-    axios.delete(`http://127.0.0.1:5000/Task/${taskItem.id}`);
+    axios.delete(`http://https://backend-ci48.onrender.com/Task/${taskItem.id}`);
     window.location.reload();
   }
   componentDidMount() {
