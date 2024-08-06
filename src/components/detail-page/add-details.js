@@ -1,6 +1,6 @@
 // import React, { Component } from "react";
 // import axios from "axios";
-// import ReactHtmlParser from "react-html-parser";
+// import ReactHtmlParser from "html-react-parser";
 
 // import AddForm from "../forms/add-form";
 // import SpecsMotorImage from "./forms/specs-motor-image";
@@ -50,7 +50,7 @@
 
 //   getSpecsItem() {
 //     axios
-//       .get(`http://https://backend-ci48.onrender.com/Specs/${this.state.currentsn}`)
+//       .get(`http://127.0.0.1:8000/Specs/${this.state.currentsn}`)
 //       .then((response) => {
 //         this.setState({
 //           SpecsItem: response.data.Specs,

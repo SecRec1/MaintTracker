@@ -45,7 +45,7 @@ export default class TaskCalculator extends Component {
   }
 
   getIBSTs() {
-    axios.get(`http://https://backend-ci48.onrender.com/IBST`).then((response) => {
+    axios.get(`http://127.0.0.1:8000/IBST`).then((response) => {
       this.setState({
         taskrecords: [...response.data],
       });
@@ -155,7 +155,7 @@ export default class TaskCalculator extends Component {
       return record.task_id;
     });
     const uptaskrec = uptaskid.forEach((record) => {
-      axios.get(`http://https://backend-ci48.onrender.com/Task/${record}`).then((response) => {
+      axios.get(`http://127.0.0.1:8000/Task/${record}`).then((response) => {
         this.setState(
           {
             finalupcoming: [response.data].concat(this.state.finalupcoming),
@@ -172,7 +172,7 @@ export default class TaskCalculator extends Component {
       return record.task_id;
     });
     const duetaskrec = duetaskid.forEach((record) => {
-      axios.get(`http://https://backend-ci48.onrender.com/Task/${record}`).then((response) => {
+      axios.get(`http://127.0.0.1:8000/Task/${record}`).then((response) => {
         this.setState(
           {
             finaldue: [response.data].concat(this.state.finaldue),
@@ -189,7 +189,7 @@ export default class TaskCalculator extends Component {
       return record.task_id;
     });
     const odtaskrec = odtaskid.forEach((record) => {
-      axios.get(`http://https://backend-ci48.onrender.com/Task/${record}`).then((response) => {
+      axios.get(`http://127.0.0.1:8000/Task/${record}`).then((response) => {
         this.setState(
           {
             finaloverdue: [response.data].concat(this.state.finaloverdue),

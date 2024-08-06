@@ -21,7 +21,7 @@ export default class SpecsPage extends Component {
 
   getSpecs() {
     axios
-      .get(`http://https://backend-ci48.onrender.com/Specs/${this.props.match.params.sn}`)
+      .get(`http://127.0.0.1:8000/Specs/${this.props.match.params.sn}`)
       .then((response) => {
         this.setState({
           specsItem: response.data,
@@ -41,7 +41,7 @@ export default class SpecsPage extends Component {
 
   async getAdmins() {
     try {
-      const response = await axios.get(`http://https://backend-ci48.onrender.com/Admin`);
+      const response = await axios.get(`http://127.0.0.1:8000/Admin`);
       this.setState({ admins: response.data }, this.getLoggedinStatus);
     } catch (error) {
       console.error(error);
